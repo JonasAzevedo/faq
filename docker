@@ -1,3 +1,12 @@
 --cleaning
 --remove unused data
 docker system prune -a
+
+--run test rspec
+docker-compose run --rm website rspec
+
+--solution for error run docker
+apagar o gemfile.lock
+coloca uma linha em branco no gemfile
+salvar
+docker-compose build
