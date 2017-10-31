@@ -1,0 +1,10 @@
+https://ngrok.com
+Objetivo: para a aplicação local ser um endpoint.
+
+--subir endpoint através ngrok
+./ngrok http 9292
+
+
+
+Exemplo: endpoint direto com o api.ai
+Subir o ngrok na mesma porta que sobe o app sinatra, e colocar a url gerada pelo ngrok no api.ai no lugar da url do app do heroku.
