@@ -20,3 +20,5 @@ docker stop $(docker ps -a -q)
 docker rm $(docker ps -a -q) remove os contêineres
 
 docker rmi $(docker images -a -q) remove as imagens
+
+docker-compose exec website rails db:create db:migrate db:seed
