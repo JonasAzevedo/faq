@@ -22,3 +22,5 @@ docker rm $(docker ps -a -q) remove os contêineres
 docker rmi $(docker images -a -q) remove as imagens
 
 docker-compose run --rm app rake db:reset db:create db:migrate
+
+todo comando q vc for fazer vc tem q rodar docker-compose run --rm website (seu comando) ex: tux
