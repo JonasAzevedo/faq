@@ -13,3 +13,10 @@ docker-compose up --build
 
 --run test rspec
 docker-compose run --rm website rspec
+
+
+docker stop $(docker ps -a -q)
+
+docker rm $(docker ps -a -q) remove os contêineres
+
+docker rmi $(docker images -a -q) remove as imagens
